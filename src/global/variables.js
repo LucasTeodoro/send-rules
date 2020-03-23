@@ -1,0 +1,1 @@
+global.defaultTimezone = process.argv.TIMEZONE || "America/Bahia";
