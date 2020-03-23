@@ -1,0 +1,24 @@
+{
+  "name": "send-rules",
+  "version": "1.0.1",
+  "description": "Regras para disparos de SMS no Brasil",
+  "main": "app.js",
+  "dependencies": {
+    "moment-timezone": "^0.5.28",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasTeodoro/send-rules.git"
+  },
+  "author": "Lucas Otavio Teodoro Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasTeodoro/send-rules/issues"
+  },
+  "homepage": "https://github.com/LucasTeodoro/send-rules#readme"
+}
