@@ -38,7 +38,7 @@ class Holydays {
         z.setFullYear( y, m-1, d );*/
         return moment().tz(defaultTimezone).year(y).month(m-1).date(d);
     }
-    static _holyDays() {
+    static _holydays() {
         const easter = Holydays._easterDate(Date("YYYY"));
         return [
             easter.format(Holydays._format),
@@ -56,9 +56,9 @@ class Holydays {
             Date().month("11").date("25").format(Holydays._format)
         ];
     }
-    static isHolyDay(date) {
+    static isHolyday(date = moment().format("YYYY-MM-DD")) {
         if(moment(date).isValid()) {
-            return _.indexOf(Holydays._holyDays(), date) !== -1;
+            return _.indexOf(Holydays._holydays(), date) !== -1;
         }
 
         throw new Error("Is not a valid date");
